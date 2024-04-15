@@ -35,6 +35,45 @@ const rollInBlurredLeft = keyframes`
     }
 `;
 
+const crazySpin = keyframes`
+  0% {
+    transform: scale(1) translateX(0) rotate(0);
+    filter: hue-rotate(0deg) blur(0);
+    opacity: 1;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  25% {
+    transform: scale(0.5) translateX(-50vw) rotate(360deg);
+    filter: hue-rotate(90deg) blur(5px);
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: red;
+  }
+  50% {
+    transform: scale(1) translateY(50vh) rotate(-360deg);
+    filter: hue-rotate(180deg) blur(10px);
+    opacity: 1;
+    border-radius: 0;
+    background-color: green;
+  }
+  75% {
+    transform: scale(3) translateX(50vw) rotate(720deg);
+    filter: hue-rotate(270deg) blur(15px);
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: yellow;
+  }
+  100% {
+    transform: scale(1) translateY(0) rotate(1080deg);
+    filter: hue-rotate(360deg) blur(0);
+    opacity: 1;
+    border-radius: 0;
+    background-color: transparent;
+  }
+`;
+
+
 const swingFromTop = keyframes`
     0% {
         -webkit-transform: rotateX(-100deg);
@@ -96,14 +135,14 @@ export const Container = styled.div`
 export const Logo = styled.img`
   width: 100%;
   user-select: none;
-  animation: ${rollInBlurredLeft} 1.65s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
+  animation: ${crazySpin} 5s ease-in;
 `;
 
 export const Email = styled.h1`
   color: black;
   font-family: 'lt-score', sans-serif;
   font-size: calc(1rem + 1.8vw);
-  animation: ${swingFromTop} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s both;
+  animation: ${swingFromTop} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 6s both;
   margin-top: 20px;
 `;
 

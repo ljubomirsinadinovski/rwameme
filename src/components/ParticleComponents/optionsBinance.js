@@ -13,7 +13,7 @@ export const options = {
       speed: 2,
       straight: false
     },
-    number: { density: { enable: true, area: 800 }, value: 80 },
+    number: { density: { enable: true, area: 800 }, value: 100 },
     opacity: {
       value: 0.9
     },

@@ -1,23 +1,11 @@
 import './App.css';
-import {
-  Container,
-  Domain,
-  Email,
-  Logo,
-} from './styledComponents';
-import rwamManWithLogo from './assets/rwameme-man-with-logo.svg'
 import {ParticlesComponent} from "./components/ParticleComponents/Particles.jsx";
+import {LandingPageCard} from "./components/LandingPageCard/LandingPageCard.jsx";
 
 const App = () => {
   return (
     <>
-      <Container>
-        <Logo src={rwamManWithLogo} alt='RWAM MAN Logo'/>
-        <Email>
-          info<Domain>@rwam.xyz</Domain>
-        </Email>
-      </Container>
-
+      <LandingPageCard />
       <ParticlesComponent />
     </>
   );
