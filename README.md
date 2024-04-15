@@ -1,1 +1,1 @@
-![](https://github.com/ljubomirsinadinovski/logo-contact-landing-page/blob/main/example.gif)
+Meme coin website documentation
