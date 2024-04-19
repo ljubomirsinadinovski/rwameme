@@ -5,7 +5,7 @@ export const LandingPageCard = () => {
   return (
     <Container>
       <Logo src={rwamManWithLogo} alt='RWAM MAN Logo'/>
-      <Email>
+      <Email tabIndex={-1}>
         info<Domain>@rwam.xyz</Domain>
       </Email>
     </Container>)

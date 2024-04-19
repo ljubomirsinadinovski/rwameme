@@ -137,14 +137,27 @@ export const Logo = styled.img`
     animation: ${crazySpin} 5s ease-in;
 `;
 
-export const Email = styled.h1`
+export const Email = styled.button`
+    width: 100%;
     color: black;
+    max-width: 100%;
+    display: inline-block;
+    background: none;
     font-family: 'lt-score', sans-serif;
-    font-size: calc(1rem + 1.8vw);
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 4rem);
     animation: ${swingFromTop} 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) 6s both;
+    padding: 0px;
+    margin: 5px;
     margin-top: 20px;
+    white-space: nowrap;
+    cursor: default;
+    outline: none;
+    border: none;
 `;
+
 
 export const Domain = styled.span`
     color: #00ce9a;
+    display: inline-block;
+    max-width: 100%;
 `;

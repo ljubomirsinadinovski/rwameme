@@ -55,6 +55,7 @@ export const Container = styled.nav`
 
     @media (max-width: 768px) {
         align-self: flex-start;
+        margin-top: 35px;
         ul {
             flex-direction: column;
             display: ${props => props.isOpen ? 'flex' : 'none'};
