@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {keyframes} from 'styled-components';
+import {Link} from "react-scroll";
 
 export const Container = styled.nav`
     background: #333;
@@ -58,7 +58,25 @@ export const Container = styled.nav`
         margin-top: 35px;
         ul {
             flex-direction: column;
-            display: ${props => props.isOpen ? 'flex' : 'none'};
+            display: ${({$isOpen}) => $isOpen ? 'flex' : 'none'};
         }
     }
 `;
+
+export const MenuButton = styled(Link)`
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff; // Use your desired button color
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+`

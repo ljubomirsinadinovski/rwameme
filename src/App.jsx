@@ -3,6 +3,11 @@ import {ParticlesComponent} from "./components/ParticleComponents/Particles.jsx"
 import {LandingPageCard} from "./components/LandingPageCard/LandingPageCard.jsx";
 import {NavigationMenu} from "./components/NavigationMenu/NavigationMenu.jsx";
 import styled from "styled-components";
+import {BuyButton} from "./components/BuyButton/BuyButton.jsx";
+import {Section} from "./components/Section/Section.jsx";
+import moneyMeme from "./assets/money.png"
+import babyMeme from "./assets/baby.webp"
+import logoLetters from "./assets/logoLetters.png"
 
 const App = () => {
   return (
@@ -10,7 +15,24 @@ const App = () => {
       <ParticlesComponentStyled/>
       <ContentContainer>
         <NavigationMenu/>
+        <BuyButton/>
         <LandingPageCard/>
+        <Section
+          title={"About this Token"}
+          description={"Another MEME resembling the Real World Assets."}
+          imageSrc={moneyMeme}
+        />
+        <Section
+          title={"Tokenomics"}
+          description={"Contract Ownership is RENOUNCED, supply is 100,000,000,000"}
+          imageSrc={babyMeme}
+          inverse={true}
+        />
+        <Section
+          title={"Roadmap"}
+          description={"We build the road on the map with RWAM"}
+          imageSrc={logoLetters}
+        />
       </ContentContainer>
     </MainContainer>
   );
@@ -42,4 +64,6 @@ const ContentContainer = styled.div`
     align-items: center;
     padding: 30px;
     background: transparent;
+    overflow: auto;
+    flex-grow: 1;
 `;
