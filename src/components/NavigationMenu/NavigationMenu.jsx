@@ -13,10 +13,9 @@ export const NavigationMenu = () => {
         <div />
       </div>
       <ul>
-        <li><MenuButton to="section1" smooth={true} duration={1000}>Home</MenuButton></li>
-        <li><MenuButton to="section2" smooth={true} duration={1000}>About</MenuButton></li>
-        <li><MenuButton to="section3" smooth={true} duration={1000}>Tokenomics</MenuButton></li>
-        <li><MenuButton to="section4" smooth={true} duration={1000}>Roadmap</MenuButton></li>
+        <li><MenuButton to="aboutSection" smooth={true} duration={1000}>About</MenuButton></li>
+        <li><MenuButton to="tokenomicsSection" smooth={true} duration={1000}>Tokenomics</MenuButton></li>
+        <li><MenuButton to="roadmapSection" smooth={true} duration={1000}>Roadmap</MenuButton></li>
       </ul>
     </Container>
   );

@@ -18,17 +18,20 @@ const App = () => {
         <BuyButton/>
         <LandingPageCard/>
         <Section
+          name="aboutSection"
           title={"About this Token"}
           description={"Another MEME resembling the Real World Assets."}
           imageSrc={moneyMeme}
         />
         <Section
+          name="tokenomicsSection"
           title={"Tokenomics"}
           description={"Contract Ownership is RENOUNCED, supply is 100,000,000,000"}
           imageSrc={babyMeme}
           inverse={true}
         />
         <Section
+          name="roadmapSection"
           title={"Roadmap"}
           description={"We build the road on the map with RWAM"}
           imageSrc={logoLetters}
