@@ -25,14 +25,14 @@ export const LinkButton = styled.a`
     text-align: center;
     text-decoration: none;
     transition: all 0.3s;
-    font-size: 3rem;
+    font-size: 2rem;
 
     max-height: 0;
     visibility: hidden;
     overflow: hidden;
     margin: 0;
 
-    animation: ${appear} 1s ease forwards;
+    animation: ${appear} 1s ease-out forwards;
     animation-delay: 7s;
 
     &:hover {

@@ -50,7 +50,7 @@ export const CardDescription = styled.h1`
 export const Image = styled.img`
     max-width: 50%;
     height: auto; // Keeps the aspect ratio of the image
-    object-fit: cover; // Covers the available area without stretching the image
+    object-fit: scale-down; // Covers the available area without stretching the image
     @media (max-width: 768px) {
         align-self: center;
     }

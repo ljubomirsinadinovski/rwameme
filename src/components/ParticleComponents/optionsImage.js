@@ -1,4 +1,4 @@
-import headMeme from '../../assets/headMeme.png'
+import headMeme from '../../assets/headMeme.webp'
 export const options = {
   background: {
     color: {

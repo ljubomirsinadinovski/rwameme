@@ -1,5 +1,5 @@
 import {Container, Domain, Email, Logo} from "./styledComponents.js";
-import rwamManWithLogo from "../../assets/rwameme-man-with-logo.png";
+import rwamManWithLogo from "../../assets/rwameme-man-with-logo.webp";
 
 export const LandingPageCard = () => {
   return (
