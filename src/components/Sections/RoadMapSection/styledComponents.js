@@ -44,6 +44,7 @@ export const CardTitle = styled.h1`
 
 export const CardDescription = styled.h1`
     font-size: 2rem;
+    font-family: 'lt-score', sans-serif;
 
 `
 

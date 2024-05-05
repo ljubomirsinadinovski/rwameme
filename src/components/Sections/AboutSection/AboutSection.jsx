@@ -11,7 +11,7 @@ export const AboutSection = ({name, title, imageSrc, inverse}) => {
       <Card $inverse={inverse}>
         <TextContent>
           <CardTitle>{title}</CardTitle>
-          <CardDescription>Welcome to the First RWA meme, where we celebrate the intersection of Real-World Assets (RWAs) and humor.</CardDescription>
+          <CardDescription>With RWA meme we celebrate the intersection of Real-World Assets (RWAs) and humor.</CardDescription>
           <CardDescription>Our MEMES capture the essence of everyday scenarios, from work and relationships to technology and culture, with a witty twist.</CardDescription>
         </TextContent>
         <Image src={imageSrc} alt="Image"/>

@@ -18,7 +18,7 @@ const App = () => {
       <ContentContainer>
         <NavigationContainer>
           <NavigationMenu/>
-          <HeaderTitle>First MEME built on the Base Chain!</HeaderTitle>
+          <HeaderTitle>Built on the Base Chain</HeaderTitle>
         </NavigationContainer>
         <BuyButton
           title={"Buy Token"}
@@ -38,7 +38,7 @@ const App = () => {
         <RoadMapSection
           name="roadmapSection"
           title={"Roadmap"}
-          description={"We build the road on the map with RWAM"}
+          description={"Journey around the world and tokenization"}
           imageSrc={logoLetters}
         />
       </ContentContainer>
