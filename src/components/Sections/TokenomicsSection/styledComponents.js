@@ -56,3 +56,9 @@ export const Image = styled.img`
         align-self: center;
     }
 `;
+export const ContractAddress = styled.p`
+    font-size: 1rem;
+    font-family: monospace;
+    margin: 10px 20px;
+    overflow-wrap: anywhere;
+`

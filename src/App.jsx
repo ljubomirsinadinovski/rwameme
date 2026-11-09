@@ -4,6 +4,7 @@ import {LandingPageCard} from "./components/LandingPageCard/LandingPageCard.jsx"
 import {NavigationMenu} from "./components/NavigationMenu/NavigationMenu.jsx";
 import styled from "styled-components";
 import {BuyButton} from "./components/Buttons/BuyButton/BuyButton.jsx";
+import {LinkToContractButton} from "./components/Buttons/LinkToContractButton/LinkToContractButton.jsx";
 import moneyMeme from "./assets/money.webp"
 import babyMeme from "./assets/baby.webp"
 import logoLetters from "./assets/logoLetters.webp"
@@ -18,7 +19,15 @@ const App = () => {
       <ContentContainer>
         <NavigationContainer>
           <NavigationMenu/>
-          <HeaderTitle>Built on the Base Chain</HeaderTitle>
+          <HeaderRight>
+            <HeaderTitle>Built on the Base Chain</HeaderTitle>
+            <HeaderLinks>
+              <LinkToContractButton title={"Smart contract"}
+                destination={"https://basescan.org/address/0x6e8b5cb8dcba2301e5c3112292db4c6637d9459f#code"}/>
+              <LinkToContractButton title={"Liquidity pool"}
+                destination={"https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x6E8B5Cb8DCba2301E5c3112292db4C6637d9459f&chain=base"}/>
+            </HeaderLinks>
+          </HeaderRight>
         </NavigationContainer>
         <BuyButton
           title={"Buy Token"}
@@ -95,6 +104,32 @@ const HeaderTitle = styled.h2`
     width: fit-content;
     border-radius: 10px;
     padding: 5px;
-    align-self: center;
+    margin: 0 0 10px 0;
+`
+
+const HeaderRight = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin: 20px;
+
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+`
+
+const HeaderLinks = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+
+    a {
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `

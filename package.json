@@ -9,16 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tsparticles/engine": "^3.3.0",
-    "@tsparticles/react": "^3.0.0",
-    "@tsparticles/shape-image": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
     "react-scroll": "^1.9.0",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.8",
-    "tsparticles": "^3.3.0",
     "tsparticles-move-base": "^2.12.0",
     "tsparticles-shape-circle": "^2.12.0",
     "tsparticles-shape-image": "^2.12.0",
@@ -30,7 +25,15 @@
   "devDependencies": {
     "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.25",
-    "@vitejs/plugin-react-swc": "^3.6.0",
-    "vite": "^5.2.8"
+    "@vitejs/plugin-react-swc": "^4.3.3",
+    "vite": "^8.3.7"
+  },
+  "description": "Landing page for RWAMEME, a Real World Asset meme token on the Base chain",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljubomirsinadinovski/rwameme.git"
   }
 }
