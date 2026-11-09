@@ -4,8 +4,16 @@
 
 Landing page for **RWAMEME**, a meme token on the [Base](https://base.org) chain. It is a single-page React app with an animated particle background, smooth-scroll navigation, and About, Tokenomics and Roadmap sections.
 
-- **Smart contract (Base):** [`0x6E8B5Cb8DCba2301E5c3112292db4C6637d9459f`](https://basescan.org/address/0x6e8b5cb8dcba2301e5c3112292db4c6637d9459f#code) (verified source on BaseScan)
-- **Liquidity pool / buy:** [Uniswap (Base)](https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x6E8B5Cb8DCba2301E5c3112292db4C6637d9459f&chain=base)
+## Smart contract and liquidity pool
+
+I created and deployed the RWAMEME token's smart contract on Base, and set up its liquidity pool on Uniswap so the token can be traded against ETH.
+
+| | Link |
+| --- | --- |
+| **Smart contract** | [`0x6E8B5Cb8DCba2301E5c3112292db4C6637d9459f`](https://basescan.org/address/0x6e8b5cb8dcba2301e5c3112292db4c6637d9459f#code) on BaseScan, with verified source code |
+| **Liquidity pool** | [RWAMEME / ETH on Uniswap (Base)](https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x6E8B5Cb8DCba2301E5c3112292db4C6637d9459f&chain=base) |
+
+The website links to both from the buttons under "Built on the Base Chain".
 
 > Nothing in this repository is financial advice. Meme tokens are highly speculative.
 
